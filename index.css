@@ -1,5 +1,100 @@
+body {
+  background-color: #333;
+}
+
+main {
+  margin-top: -64px;
+}
+
+h1, h2, article h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+}
+
+h3, h4, h5 {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+p, a {
+  font-family: 'Nunito', sans-serif;
+}
+
+article a {
+  color: rgba(0, 100, 0, 1);
+  font-size: 18px;
+}
+
+article a:visited {
+  color: rgba(0, 100, 25, 1);
+}
+
+.target-site {
+  margin-bottom: 8px;
+}
+
+.skills-list {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.container {
+  background-color: white;
+  max-width: 1440px;
+}
+
+.skill-container {
+  background-color: white;
+  border: 1px solid rgb(238,238,238);
+  border-radius: 8px;
+  display: flex;
+  padding: 0;
+}
+
+.skill-box {
+  box-sizing: border-box;
+  display: inline-block;
+  flex-direction: column;
+  padding: 0 14px 30px 14px;
+  vertical-align: top;
+  width: 49.5%;
+}
+
+.skill-box h3, .skill-box h4 {
+  color: rgba(0, 100, 0, 1);
+}
+
+.skill-box:first-child {
+  border-right: 1px solid rgb(238, 238, 238);
+}
+
+.section-heading {
+  padding-top: 80px;
+}
+
+article {
+  padding-bottom: 40px;
+}
+
+.skill-box, .section-heading, .title-heading {
+  text-align: center;
+}
+
+.green-box {
+  background-color: rgba(0, 100, 0, 1);
+  height: 100px;
+}
+
 img {
   border: 2px solid #333;
   border-radius: 16px;
+  margin-bottom: 18px;
   max-width: 100%;
+}
+
+@media ( max-width:600px ) {
+  .skill-box {
+    border-right: none;
+    width: 100%;
+  }
 }
